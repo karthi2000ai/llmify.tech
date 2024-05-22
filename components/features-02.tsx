@@ -2,13 +2,13 @@ import Image from "next/image";
 import Particles from "./particles";
 import Highlighter, { HighlighterItem } from "./highlighter";
 
-import FeatureImg01 from "@/public/images/feature-image-01.png";
-import FeatureImg02 from "@/public/images/feature-image-02.png";
-import FeatureImg03 from "@/public/images/feature-image-03.png";
+import FeatureImg01 from "@/public/chart.png";
+import FeatureImg02 from "@/public/chart1.png";
+import FeatureImg03 from "@/public/chart2.png";
 
 export default function Features02() {
   return (
-    <section className="relative">
+    <section className="relative pb-12">
       {/* Particles animation */}
       <div className="absolute left-1/2 -translate-x-1/2 top-0 -z-10 w-80 h-80 -mt-24 -ml-32">
         <Particles
@@ -117,9 +117,13 @@ export default function Features02() {
                               Infinite Customization
                             </h3>
                             <p className="text-slate-400">
-                              Tailor the tool to your specific needs with
+                              Tailor TrackGenAI to your specific needs with
                               customizable dashboards and reports. Focus on the
-                              metrics that matter most to your business.
+                              metrics that matter most to your business, using
+                              insights powered by ChatGPT, Claude, and Gemini
+                              AI. Easily adjust the view to highlight key data
+                              points, ensuring your team has the most relevant
+                              information at their fingertips.
                             </p>
                           </div>
                         </div>
@@ -140,9 +144,9 @@ export default function Features02() {
                       {/* Image */}
                       <div className="relative w-full h-64 md:h-auto overflow-hidden">
                         <Image
-                          className="absolute bottom-0 left-1/2 -translate-x-1/2 mx-auto max-w-none md:relative md:left-0{md}transla{}-x-0"
+                          className="absolute scale-150 bottom-0 left-1/2 -translate-x-1/2 mx-auto max-w-none md:relative md:left-0{md}transla{}-x-0"
                           src={FeatureImg01}
-                          width="504"
+                          width="404"
                           height="400"
                           alt="Feature 01"
                         />
@@ -170,11 +174,14 @@ export default function Features02() {
                             Extensibility
                           </h3>
                           <p className="text-slate-400">
-                            Our tool offers a seamless blend of powerful
-                            features and user-friendly design. Customize your
+                            TrackGenAI offers a seamless blend of powerful
+                            features and a user-friendly design. Customize your
                             dashboards to prioritize key metrics and insights
-                            that are most critical to your brand’s visibility
-                            and growth.
+                            critical to your brand’s visibility and growth.
+                            Leverage the advanced capabilities of ChatGPT,
+                            Claude, and Gemini AI to track and analyze content
+                            performance across all platforms, providing you with
+                            the data you need to make informed decisions.
                           </p>
                         </div>
                       </div>
@@ -212,9 +219,13 @@ export default function Features02() {
                           </h3>
                           <p className="text-slate-400">
                             Easily apply filters to refine your data and create
-                            custom views tailored to your needs. Our tool adapts
-                            to your unique business requirements, providing the
-                            exact insights you need to stay ahead.
+                            custom views tailored to your needs. TrackGenAI
+                            adapts to your unique business requirements,
+                            providing the exact insights you need to stay ahead.
+                            Harness the power of ChatGPT, Claude, and Gemini AI
+                            for comprehensive content tracking, ensuring you
+                            always have the most accurate and up-to-date
+                            information.
                           </p>
                         </div>
                       </div>
@@ -223,8 +234,8 @@ export default function Features02() {
                         <Image
                           className="absolute bottom-0 left-1/2 -translate-x-1/2 mx-auto max-w-none md:max-w-full md:relative md:left-0 md:translate-x-0"
                           src={FeatureImg03}
-                          width={230}
-                          height={230}
+                          width={306}
+                          height={206}
                           alt="Feature 03"
                         />
                       </div>
@@ -237,7 +248,6 @@ export default function Features02() {
 
           {/* Features list */}
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-            {/* Feature */}
             <div>
               <div className="flex items-center space-x-2 mb-1">
                 <svg
@@ -251,11 +261,12 @@ export default function Features02() {
                 <h4 className="font-medium text-slate-50">Filters</h4>
               </div>
               <p className="text-sm text-slate-400">
-                Login box must find the right balance for the user convenience,
-                privacy and security.
+                Refine your data with advanced filters powered by ChatGPT,
+                Claude, and Gemini AI. Ensure that your analysis focuses on the
+                most critical aspects of your content and marketing strategies.
               </p>
             </div>
-            {/* Feature */}
+
             <div>
               <div className="flex items-center space-x-2 mb-1">
                 <svg
@@ -269,8 +280,9 @@ export default function Features02() {
                 <h4 className="font-medium text-slate-50">Configurable</h4>
               </div>
               <p className="text-sm text-slate-400">
-                Login box must find the right balance for the user convenience,
-                privacy and security.
+                Adjust TrackGenAI’s settings to fit your business needs
+                perfectly. Our platform's flexibility, powered by leading AI
+                technologies, ensures that you get the most out of your data.
               </p>
             </div>
             {/* Feature */}
@@ -287,8 +299,9 @@ export default function Features02() {
                 <h4 className="font-medium text-slate-50">Adaptable</h4>
               </div>
               <p className="text-sm text-slate-400">
-                Login box must find the right balance for the user convenience,
-                privacy and security.
+                TrackGenAI is designed to adapt to the evolving needs of your
+                business. With insights from ChatGPT, Claude, and Gemini AI, our
+                tool scales with you, providing consistent value.
               </p>
             </div>
             {/* Feature */}
@@ -305,8 +318,9 @@ export default function Features02() {
                 <h4 className="font-medium text-slate-50">Authorization</h4>
               </div>
               <p className="text-sm text-slate-400">
-                Login box must find the right balance for the user convenience,
-                privacy and security.
+                Securely manage user access and permissions. TrackGenAI’s robust
+                authorization system, enhanced by AI insights, ensures that your
+                data is protected while remaining accessible to your team.
               </p>
             </div>
             {/* Feature */}
@@ -323,8 +337,10 @@ export default function Features02() {
                 <h4 className="font-medium text-slate-50">Management</h4>
               </div>
               <p className="text-sm text-slate-400">
-                Login box must find the right balance for the user convenience,
-                privacy and security.
+                Streamline your content and keyword management with TrackGenAI’s
+                advanced features. Utilize ChatGPT, Claude, and Gemini AI to
+                oversee all aspects of your marketing efforts, ensuring optimal
+                performance.
               </p>
             </div>
             {/* Feature */}
@@ -341,8 +357,10 @@ export default function Features02() {
                 <h4 className="font-medium text-slate-50">Building</h4>
               </div>
               <p className="text-sm text-slate-400">
-                Login box must find the right balance for the user convenience,
-                privacy and security.
+                Build comprehensive strategies with TrackGenAI’s AI-powered
+                insights. Our platform helps you construct effective marketing
+                campaigns and content plans, supported by data from ChatGPT,
+                Claude, and Gemini AI.
               </p>
             </div>
           </div>
